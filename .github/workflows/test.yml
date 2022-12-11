@@ -17,5 +17,5 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            JSON.stringify(github.context)
+            core.setOutput('context', JSON.stringify(github.context))
 
