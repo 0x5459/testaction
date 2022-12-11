@@ -17,6 +17,6 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            core.exportVariable('GITHUBCONTEXT', JSON.stringify(github.context))
+            core.exportVariable('GITHUBCONTEXT', JSON.stringify(context))
 
       - run: echo "$GITHUBCONTEXT"
