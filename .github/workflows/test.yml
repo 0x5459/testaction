@@ -17,5 +17,6 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            core.setOutput('context', github.context)
+            core.setOutput('GITHUBCONTEXT', github.context)
 
+      - run: echo "$GITHUBCONTEXT"
